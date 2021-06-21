@@ -1,1 +1,9 @@
 $main-font: "Source Sans Pro";
+$orange: #FFA837;
+$orange-light: lighten(#FFA837, 10%);
+
+@mixin btn_orange {
+    border-radius: 30px;
+    background-color: $orange;
+    text-transform: uppercase;
+  }
