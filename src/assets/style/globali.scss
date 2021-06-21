@@ -1,0 +1,14 @@
+/* Importo bootstrap */
+@import '~bootstrap/scss/bootstrap';
+
+/* importo lo stile */
+@import "~@fontsource/source-sans-pro/index.css";
+@import "~@fontsource/source-sans-pro/600.css";
+@import "~@fontsource/source-sans-pro/700.css";
+
+/* importo il file delle variabili */
+@import "./variabili.scss";
+
+body{
+    font-family: $main-font;
+}
