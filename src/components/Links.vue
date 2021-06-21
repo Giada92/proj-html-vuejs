@@ -3,7 +3,7 @@
         <li class="px-4"
             @click="changeNavStatus(index)"
             v-for="el, index in link" :key="index">
-            <a href="#" :class="{active: index==activeIndex}">
+            <a href="el.link" :class="{active: index==activeIndex}">
                 {{ el.text }} 
                 <span class="badge my_badge">{{ el.text2 }}</span>
             </a>

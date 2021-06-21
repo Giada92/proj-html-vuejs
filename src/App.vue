@@ -9,7 +9,7 @@
     <!-- /Corpo della pagina -->
 
     <!-- Footer -->
-    <Footer />
+    <Footer :links="links"/>
     <!-- /Footer -->
 
   </div>
