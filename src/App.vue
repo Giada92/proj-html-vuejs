@@ -6,7 +6,8 @@
 
     <!-- Corpo della pagina -->
     <Main :newTemplate="newTemplate"
-          :services="services"/>
+          :services="services"
+          :clients="clients"/>
     <!-- /Corpo della pagina -->
 
     <!-- Footer -->
@@ -127,6 +128,20 @@ export default {
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nesciunt ipsam, adipisci quasi ea voluptatibus.",
           link: "Read More"
         },
+      ],
+      clients:[
+        {
+          url:require("./assets/img/testimonials-2.jpg"),
+          text: "Ability proceeds from a fusion of skills, knowledge, understanding and imagination, consolidated by expierience.",
+          testimonials: "Luis Desalvo",
+          job: "Creo Tech"
+        },
+        {
+          url:require("./assets/img/testimonials-1.jpg"),
+          text: "Beauty is when you can appreciate yourself. When you love yourself, that's when you're most beautiful",
+          testimonials: "Sheila McCourtney",
+          job: "Architech"
+        }
       ]
     }
   }

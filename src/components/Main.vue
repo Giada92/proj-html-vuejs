@@ -47,7 +47,7 @@
               <div class="wrapper_gallery" v-for="el, index in gallery" :key="index">
                 <div class="gallery_img">
                   <img :src="el.url" alt="">
-                  <div class="layover">
+                  <div class="d-flex justify-content-center align-items-center layover">
                     <i class="fas fa-link"></i>
                   </div>
                 </div>
@@ -60,16 +60,26 @@
         </div>
       </section>
       <!-- /Sezione Our Work -->
+
+      <!-- Sezione Clients say -->
+      <section id="clients_say" class="container text-center">
+        <h2 class="fw-bold">What Our Clients Say</h2>
+        <Slider :clients="clients"/>  
+      </section>
+      <!-- /Sezione Clients say -->
   </main>
 </template>
 
 <script>
 import Card from './Card.vue';
+import Slider from './Slider.vue';
+
 
 export default {
     name:"Main",
     components:{
-      Card
+      Card,
+      Slider
     },
     data(){
       return{
@@ -98,7 +108,8 @@ export default {
     props:{
       newTemplate: Array,
       services:Array,
-      work: Array
+      work: Array,
+      clients: Array
     }
 }
 </script>
@@ -164,32 +175,23 @@ export default {
     display: block;
     max-width: 95%;
     object-fit: cover;
-    &:hover {
-      cursor: pointer;
-    }
   }
 }
 
 .layover {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 95%;
     height: 100%;
     position: absolute;
     top:0;
     left: 0;
     background-color: rgba(#0369d7, 0.5);
-    cursor: pointer;
     color: white;
+    cursor: pointer;
     visibility: hidden;
-}
 
-.layover.circle {
-    border-radius: 50%;
-}
-.layover > i {
+    & > i {
     font-size: 40px;
+}
 }
 
 .btn_orange {
