@@ -64,22 +64,28 @@
       <!-- Sezione Clients say -->
       <section id="clients_say" class="container text-center">
         <h2 class="fw-bold">What Our Clients Say</h2>
-        <Slider :clients="clients"/>  
+        <Slider :clients="clients"/>
+        <hr class="my-5">
+        <SliderLogos :urlLogos="urlLogos"/>
       </section>
       <!-- /Sezione Clients say -->
+
   </main>
 </template>
 
 <script>
 import Card from './Card.vue';
 import Slider from './Slider.vue';
+import SliderLogos from './SliderLogos.vue';
+
 
 
 export default {
     name:"Main",
     components:{
       Card,
-      Slider
+      Slider,
+      SliderLogos
     },
     data(){
       return{
@@ -108,8 +114,8 @@ export default {
     props:{
       newTemplate: Array,
       services:Array,
-      work: Array,
-      clients: Array
+      clients: Array,
+      urlLogos: Array
     }
 }
 </script>
@@ -206,4 +212,12 @@ export default {
 }
 
 /* Sezione Work */
+
+/* sezione Clients say */
+#clients_say{
+  padding: 100px 0;
+}
+
+/* sezione Clients say */
+
 </style>

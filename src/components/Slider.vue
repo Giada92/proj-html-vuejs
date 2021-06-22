@@ -1,6 +1,6 @@
 <template>
   <div>
-        <div class="slider">
+        <div>
             <img :src="clients[imgIndex].url" alt="">
             <h5 class="fst-italic">{{ clients[imgIndex].text }}</h5>
             <p class="fw-bold">{{ clients[imgIndex].testimonials }}, 
@@ -23,14 +23,23 @@ export default {
     },
     data(){
         return{
-            imgIndex: 0
+            imgIndex: 0,
+            autoPlay: ""
         }
     },
     methods:{
         changeTestimonial: function(newIndex) {
             this.imgIndex = newIndex;
         }
-    }
+    }/* ,
+    created: function() {
+        this.autoPlay = setInterval(()=>{ 
+                this.imgIndex++;
+                if(this.imgIndex >= this.clients.length){
+                    this.imgIndex = 0;
+                }
+            }, 5000);
+        } */
 }
 </script>
 
@@ -44,12 +53,13 @@ img {
 
 p,
 h5{
-    font-size: 20px;
+    font-size: 22px;
+    margin: 10px 0;
 }
 
 i {
-    padding: 0 5px;
-    font-size: 15px;
+    padding: 10px 5px;
+    font-size: 13px;
     cursor: pointer;
 }
 
