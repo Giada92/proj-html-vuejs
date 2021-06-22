@@ -5,6 +5,8 @@ $orange-light: lighten(#FFA837, 10%);
 $blue: #0369d7;
 $blue-light: lighten(#0369d7, 10%);
 
+$grey-light: lighten(#5a5759, 10%);
+
 @mixin btn_orange {
     border-radius: 30px;
     background-color: $orange;
