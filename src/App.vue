@@ -16,6 +16,8 @@
             :info="info"/>
     <!-- /Footer -->
 
+    
+
   </div>
 </template>
 

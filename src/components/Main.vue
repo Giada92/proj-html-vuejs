@@ -216,6 +216,7 @@ export default {
 /* sezione Clients say */
 #clients_say{
   padding: 100px 0;
+  //overflow-x: hidden;
 }
 
 /* sezione Clients say */

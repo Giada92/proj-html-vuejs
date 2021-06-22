@@ -31,7 +31,7 @@ export default {
         changeTestimonial: function(newIndex) {
             this.imgIndex = newIndex;
         }
-    }/* ,
+    },
     created: function() {
         this.autoPlay = setInterval(()=>{ 
                 this.imgIndex++;
@@ -39,7 +39,7 @@ export default {
                     this.imgIndex = 0;
                 }
             }, 5000);
-        } */
+        }
 }
 </script>
 
