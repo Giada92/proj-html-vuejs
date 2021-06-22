@@ -8,7 +8,8 @@
     <Main :newTemplate="newTemplate"
           :services="services"
           :clients="clients"
-          :urlLogos="urlLogos"/>
+          :urlLogos="urlLogos"
+          :plans="plans"/>
     <!-- /Corpo della pagina -->
 
     <!-- Footer -->
@@ -16,7 +17,11 @@
             :info="info"/>
     <!-- /Footer -->
 
-    
+    <!-- Pulsante per tornare in cima alla pagina - Fixed -->
+    <div id="arrow">
+        <a class="btn" href="#"><i class="fas fa-chevron-up"></i></a>
+    </div>        
+    <!-- Pulsante per tornare in cima alla pagina - Fixed -->
 
   </div>
 </template>
@@ -143,7 +148,7 @@ export default {
           url:require("./assets/img/testimonials-1.jpg"),
           text: "Beauty is when you can appreciate yourself. When you love yourself, that's when you're most beautiful",
           testimonials: "Sheila McCourtney",
-          job: "Architech"
+          job: "Architect"
         }
       ],
       urlLogos:[
@@ -171,6 +176,52 @@ export default {
           url:require("./assets/img/clients_partner_6-200x202.png"),
           alt: "Logo Avada"
         },
+      ],
+      plans: [
+        {
+          level:"Standard",
+          dollar:"fas fa-dollar-sign",
+          price: "19",
+          cents: "99",
+          time: "monthly",
+          projects:"5 Projects",
+          GB: "5 GB Storage",
+          Users:"Unlimited Users",
+          start:"Start Today"
+        },
+        {
+          level:"Premium",
+          dollar:"fas fa-dollar-sign",
+          price: "29",
+          cents: "99",
+          time: "monthly",
+          projects:"10 Projects",
+          GB: "15 GB Storage",
+          Users:"Unlimited Users",
+          start:"Start Today"
+        },
+        {
+          level:"Professional",
+          dollar:"fas fa-dollar-sign",
+          price: "39",
+          cents: "99",
+          time: "monthly",
+          projects:"15 Projects",
+          GB: "30 GB Storage",
+          Users:"Unlimited Users",
+          start:"Start Today"
+        },
+        {
+          level:"Extrame",
+          dollar:"fas fa-dollar-sign",
+          price: "59",
+          cents: "99",
+          time: "monthly",
+          projects:"Unlimited Projects",
+          GB: "Unlimited Storage",
+          Users:"Unlimited Users",
+          start:"Start Today"
+        }
       ]
     }
   }
@@ -179,5 +230,22 @@ export default {
 
 <style lang="scss">
 @import "./assets/style/globali.scss";
+
+/* Pulsante Help */
+#arrow {
+    position: fixed;
+    width: 40px;
+    bottom: 0%;
+    right: 5%;
+    background-color: rgba(0,0,0,0.8);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    
+    i{
+       color: white;
+    }
+}
+
 
 </style>

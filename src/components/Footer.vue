@@ -1,5 +1,5 @@
 <template>
-  <footer class="text-center py-4">
+  <footer class="text-center py-4 mt-3">
     <!-- Logo -->
     <a href="#">
       <img src="../assets/img/logo_seo_1x.png" alt="Logo AvadaSeo">
