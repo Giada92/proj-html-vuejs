@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/style/globali.scss";
+@import "../../assets/style/globali.scss";
 
 h3:hover {
     color: $orange;

@@ -23,3 +23,13 @@ $grey-light: lighten(#5a5759, 10%);
     font-weight: 600;
     cursor: pointer;
 }
+
+@mixin btn_grey {
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: 2px solid grey;
+    color:grey;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}

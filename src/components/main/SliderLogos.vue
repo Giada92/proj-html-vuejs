@@ -1,22 +1,22 @@
 <template>
     <flickity ref="flickity" :options="flickityOptions">
         <div class="carousel-cell">
-            <img src="../assets/img/clients_partner_1-200x202.png" alt="Logo Avada">
+            <img src="../../assets/img/clients_partner_1-200x202.png" alt="Logo Avada">
         </div>
         <div class="carousel-cell">
-            <img src="../assets/img/clients_partner_2-200x202.png" alt="Logo Avada LAW">
+            <img src="../../assets/img/clients_partner_2-200x202.png" alt="Logo Avada LAW">
         </div>
         <div class="carousel-cell">
-            <img src="../assets/img/clients_partner_3-200x202.png" alt="Logo Avada VET">
+            <img src="../../assets/img/clients_partner_3-200x202.png" alt="Logo Avada VET">
         </div>
         <div class="carousel-cell">
-            <img src="../assets/img/clients_partner_4-200x202.png" alt="Logo Avada HEALTH">
+            <img src="../../assets/img/clients_partner_4-200x202.png" alt="Logo Avada HEALTH">
         </div>
         <div class="carousel-cell">
-            <img src="../assets/img/clients_partner_5-200x202.png" alt="Logo Avada">
+            <img src="../../assets/img/clients_partner_5-200x202.png" alt="Logo Avada">
         </div>
         <div class="carousel-cell">
-            <img src="../assets/img/clients_partner_6-200x202.png" alt="Logo Avada">
+            <img src="../../assets/img/clients_partner_6-200x202.png" alt="Logo Avada">
         </div>
     </flickity>
 </template>
@@ -36,7 +36,7 @@ export default {
                 prevNextButtons: false,
                 pageDots: false,
                 wrapAround: true,
-                autoPlay: 5000,
+                autoPlay: 3000,
             }
         }
     }
