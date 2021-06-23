@@ -8,7 +8,6 @@
     <Main :newTemplate="newTemplate"
           :services="services"
           :clients="clients"
-          :urlLogos="urlLogos"
           :plans="plans"/>
     <!-- /Corpo della pagina -->
 
@@ -150,32 +149,6 @@ export default {
           testimonials: "Sheila McCourtney",
           job: "Architect"
         }
-      ],
-      urlLogos:[
-        {
-          url:require("./assets/img/clients_partner_1-200x202.png"),
-          alt: "Logo Avada"
-        },
-        {
-          url:require("./assets/img/clients_partner_2-200x202.png"),
-          alt: "Logo Avada LAW"
-        },
-        {
-          url:require("./assets/img/clients_partner_3-200x202.png"),
-          alt: "Logo Avada VET"
-        },
-        {
-          url:require("./assets/img/clients_partner_4-200x202.png"),
-          alt: "Logo Avada HEALTH"
-        },
-        {
-          url:require("./assets/img/clients_partner_5-200x202.png"),
-          alt: "Logo Avada"
-        },
-        {
-          url:require("./assets/img/clients_partner_6-200x202.png"),
-          alt: "Logo Avada"
-        },
       ],
       plans: [
         {

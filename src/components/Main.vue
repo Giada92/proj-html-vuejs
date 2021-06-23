@@ -320,7 +320,7 @@ p{
 #clients_say{
   padding-top: 100px;
   padding-bottom: 50px;
-  //overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 /* sezione Clients say */
